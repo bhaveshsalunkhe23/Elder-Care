@@ -83,5 +83,5 @@ sqlparse==0.3.1
 ## Feedback
 Any suggestion and feedback is welcome. You can message me on linkedin
 - [Connect me on Linkedin](https://www.linkedin.com/in/bhavesh-salunkhe-2002)
-- [Visit my website](bhaveshsalunkhe.me)
+- [Visit my website](https://bhaveshsalunkhe.me/)
 
