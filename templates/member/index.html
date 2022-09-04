@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="static/styles.css">
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/bg4.png" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  {% include "member/navbar.html" %}
+  <br><br>
+
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <marquee behavior="scroll" direction="left">
+   <img src="{% static "images/b1.png" %}" width="120" height="80" />
+   <img src="{% static "images/b2.png" %}" width="120" height="80" />
+   <img src="{% static "images/b4.png" %}" width="120" height="80" />
+   <img src="{% static "images/b7.png" %}" width="120" height="80" />
+   <img src="{% static "images/b6.png" %}" width="120" height="80" />
+   <img src="{% static "images/b5.png" %}" width="120" height="80" />
+   <img src="{% static "images/b2.png" %}" width="120" height="80" />
+   <img src="{% static "images/b1.png" %}" width="120" height="80" />
+   <img src="{% static "images/b7.png" %}" width="120" height="80" />
+   <img src="{% static "images/b4.png" %}" width="120" height="80" />
+   <img src="{% static "images/b5.png" %}" width="120" height="80" />
+   <img src="{% static "images/b6.png" %}" width="120" height="80" />
+ </marquee>
+  <br><br>
+
+  <section id="services" class="services-area services-eight">
+    <!--======  Start Section Title Five ======-->
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6>Services</h6>
+              <h2 class="fw-bold">Services for Seniors</h2>
+              <p>
+                We are India's most trusted senior care brand that gives seniors access to a healthier, hassle-free, and active life in the comfort of their own home.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="single-services">
+          {% comment %} <div class="service-icon">
+            <i class="lni lni-capsule"></i>
+          </div> {% endcomment %}
+          <div class="service-content">
+            <h4>Household Maintenance</h4>
+            <p>
+              Keeping a household running smoothly takes a lot of work. If you’re finding it hard to keep up, you can look into laundry, shopping, gardening, housekeeping, and handyman services. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-services">
+          {% comment %} <div class="service-icon">
+            <i class="lni lni-bootstrap"></i>
+          </div> {% endcomment %}
+          <div class="service-content">
+            <h4>Transportation</h4>
+            <p>
+              Transportation is a key issue for older adults. Access to trains, buses, rideshare apps, reduced fare taxis, and senior transportation services can help prolong your independence and maintain your social network.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-services">
+          {% comment %} <div class="service-icon">
+            <i class="lni lni-shortcode"></i>
+          </div> {% endcomment %}
+          <div class="service-content">
+            <h4>Home Modifications</h4>
+            <p>
+              Modifications can include things such as grab bars in the shower, ramps to avoid or minimize the use of stairs, or even installing a new bathroom on the ground floor.            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-services">
+          {% comment %} <div class="service-icon">
+            <i class="lni lni-dashboard"></i>
+          </div> {% endcomment %}
+          <div class="service-content">
+            <h4>Personal Care</h4>
+            <p>
+              Help with the activities of daily living, such as dressing, bathing, or meal preparation, is called personal or custodial care. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-services">
+          {% comment %} <div class="service-icon">
+            <i class="lni lni-layers"></i>
+          </div> {% endcomment %}
+          <div class="service-content">
+            <h4>Health Care</h4>
+            <p>
+              Some healthcare services can be provided at home by trained professionals, such as occupational therapists, social workers, or home health nurses. Hospice care can also be provided at home. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-services">
+          {% comment %} <div class="service-icon">
+            <i class="lni lni-reload"></i>
+          </div> {% endcomment %}
+          <div class="service-content">
+            <h4>Day Programs</h4>
+            <p>
+              Day programs or adult daycare can help you keep busy with activities and socialization during the day, while providing a break for your caregivers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include "member/customer_staffmember_cards.html" %}
+<br><br><br><br><br>
+  {% include "member/footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+{% extends 'member/adminbase.html' %}
+{% load widget_tweaks %}
+{% block content %}
+<head>
+  <style media="screen">
+    input[type=text], select,input[type=number] , textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+
+  </style>
+
+
+</head>
+
+
+
+<br><br><br><br><br>
+<h1 style="text-align:center;">MAKE REQUEST</h1>
+<div>
+  <form method="post" style="margin-left:200px;margin-right:200px;">
+      {% csrf_token %}
+    <label for="category">Services</label>
+    {% render_field enquiry.category class="form-control"  %}<br>
+
+    <label for="Customer_name">Customer Name</label>
+    {% render_field enquiry.member_name class="form-control" placeholder="Customer Name" %}
+
+    <label for="customer_number">Customer Number</label>
+    {% render_field enquiry.member_brand class="form-control" placeholder="Customer Number" %}
+
+    <label for="customer_address">Customer Address</label>
+    {% render_field enquiry.member_model class="form-control" placeholder="Customer Address" %}
+
+    <label for="problem_description">Requirement Description</label>
+    {% render_field enquiry.problem_description class="form-control" placeholder="Requirement Description" %}
+
+    <label for="cost">Cost</label>
+    {% render_field adminenquiry.cost class="form-control" placeholder="Cost" %}
+
+    <label for="customer">Customer</label>
+    {% render_field adminenquiry.customer class="form-control"  %}
+
+    <label for="Member">Member</label>
+    {% render_field adminenquiry.staffmember class="form-control"  %}
+
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock content %}
